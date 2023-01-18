@@ -1,0 +1,40 @@
+#topmsg{
+  border: 50%;
+  text-align: center;
+  padding: 10px;
+  color: red;
+  font-family: 'Dancing Script', cursive;
+}
+
+table{
+  margin: auto;
+  border-spacing: 10px 0;
+}
+
+td{
+  height: 300px;
+  width:150px;
+  text-align: center;
+  color: grey;
+  margin: 130px;
+  border-radius: 10px;
+}
+
+#one{
+  background: yellow;
+}
+#two{
+  background: red;
+}
+#three{
+  background: cyan;
+}
+#four{
+  background: green;
+}
+#five{;
+  background: magenta;
+}
+#six{
+  background: blue;
+}

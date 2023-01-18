@@ -1,0 +1,42 @@
+div{
+  color: pink;
+}
+
+/* class names are used with dot in the beginning while referring to CSS */
+
+.firstDiv{
+  background: grey;
+
+}
+
+.secondDiv{
+  color: blue;
+}
+
+/* ids are referenced with hash in CSS file. */
+
+#singleParagraph{
+  color: green;
+  text-decoration: line-through;
+}
+
+
+/* * is not advised to be used. It overrides mostly everything from other tags */
+*{
+  /* color: black; */
+}
+
+/* Referring to elements immediately after some selectors: JSON siblings */
+h3+ul{
+  border: 4px dotted purple;
+}
+
+/* Desendents: select all anchor tags inside a list: seperate li & a with space*/
+li a{
+  color: red;
+}
+
+/* THis is how you refer to unique attributes */
+li a[href="https://www.facebook.com/"]{
+  border: 5px solid orange;
+}

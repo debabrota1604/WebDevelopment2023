@@ -1,0 +1,23 @@
+body{
+  background: image(bg.webp);
+}
+
+div{
+  background: yellow;
+  color: green;
+
+  /* borders are always defined in multiple parameters like below */
+  border-color: pink;
+  border-width: 2px;
+  border-style: double;
+}
+
+span{
+  background: white;
+  color:black;
+}
+
+
+newDiv{
+  background: pink;
+}

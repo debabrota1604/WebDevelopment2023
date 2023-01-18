@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="C:\Users\PC\Documents\CSS_project\cssProj.css">
+  </head>
+  <body>
+    <!-- All headings are in bold and has individual blocks -->
+    <h1>This is the biggest heading</h1>
+    <h2>THis is next biggest</h2>
+    <h3>This is third biggest</h3>
+    <h4>THis is forth</h4>
+    <h5>This is second smallest</h5>
+    <h6>THis is the smallest heading possible.</h6>
+
+    <!-- Paragraphs are not in bold characters -->
+    <p>THis is a paragraph</p>
+    <p>This
+    paragraph
+    gets in the same
+    line</p>
+    <p>This</p>
+    <p>is printed</p>
+    <p>in seperate lines.</p>
+
+
+
+
+
+    <h5>How to get some filler texts?</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+
+
+    <h5>Get your string in bold</h5>
+    <h6>Old style</h6>
+    <p><b>This text is in bold!</b></p>
+
+    <h6>New style</h6>
+    <p><strong>This is also in bold, more specifically, strong. </strong></p>
+
+    <h5>How to print in italics?</h5>
+    <h6>Old style</h6>
+    <p><i>This is in italics</i></p>
+
+    <h6>New Style</h6>
+    <p><em>This is also EMphasised as italics!</em></p>
+
+
+
+
+
+    <h5>How to get lists in html?</h5>
+    <!-- lists are actually the bullets and numbering from MS word -->
+    <h6>Ordered List:</h6>
+    <ol>
+      <li>First Element</li>
+      <li>Second Element</li>
+    </ol>
+    <h6>Unordered Lists:</h6>
+    <ul>
+      <li>Unordered Element 1</li>
+      <li>Unordered ELement 2</li>
+    </ul>
+
+
+    <h5>What about a nested list?</h5>
+    <ol>
+      <li>List Element 1</li>
+      <li>List item 2</li>
+      <ul>
+        <li>THis is actually next line in the code.</li>
+        <li>THis is the second line!</li>
+        <ol>
+          <li>This is <strong>inside</strong> the Unordered list!</li>
+        </ol>
+      </ul>
+    </ol>
+
+    <h4>How to group different HTML elements?</h4>
+    <p>The answer is div tag!</p>
+
+    <div class="demoClass1">
+        <h5>This heading is inside the div tag!</h5>
+        <p>This paragraph is in the same div class which implies both of them will have same style applied!</p>
+        <p>Currently they dont have any similarities, as we will tweak it when we learn <em>CSS</em>.</p>
+        <p>THere is also another <strong>inline</strong> version of div tag that is called <em>span</em> tag!</p>
+    </div>
+
+    <h4>Show an image?</h4>
+    <img src="image.WEBP" alt="Oops! The image doesn't exist.">
+    <!-- The src tag contains the image path and the alt tag contains the error message if the image is not found -->
+
+    <h4>How to reference a page from this page</h4>
+    <a href="newPage.html">Go to the new page!</a>
+
+    <h4>HTML Tables</h4>
+    <table border="1">
+      <thead>
+        <th>Country Name</th>
+        <th>Country Flag</th>
+        <th>GDP(Millions of USD)</th>
+      </thead>
+      <tr>
+        <td>USA</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/190px-Flag_of_the_United_States.svg.png" alt=""></td>
+        <td>18,561,930</td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png" alt=""></td>
+        <td>2,250,990</td>
+      </tr>
+      <tr>
+        <td>UK</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png" alt=""></td>
+        <td>2,649,890</td>
+      </tr>
+    </table>
+
+    <!-- Inputs are the elements that help take inputs from user.
+    type parameter specify the types of data like email, test, password etc.
+    input along with form element creates a powerful data entry functionalities within HTML. -->
+
+    <!-- forms will be a key component for Django later on -->
+    <form>
+      <h2>HTML Forms tutorial</h2>
+      <h4>Enter your email and password</h4>
+      <input type="email" name="email" value="Your Email here"> <!-- email type ensures email type check -->
+      <!-- type specify the data type, name is the name used to access the data and value specifies the default value. -->
+      <input type="password" name="" value="">
+      <input type="submit" name="" value="Verify!">
+      <!-- submit type actually creates a button! -->
+
+      <h4>Color Picker</h4>
+      <input type="color" name="" value="">
+
+      <h4>A simple textbox</h4>
+      <input type="text" name="" value="">
+    </form>
+
+    <!-- An Experiment -->
+    <form>
+      <h2>Working with Buttons</h2>
+      <p>What happens on the URL when the button is clicked?</p>
+      <input type="email" name="useremail" value="">
+      <input type="submit" name="" value="Submit">
+
+      <!-- After clicking the submit button with email abc@gmail.com,
+      the texts in the address bar changes from
+      file:///C:/Users/PC/Documents/Html_Level1/Basics.html
+      to
+      file:///C:/Users/PC/Documents/Html_Level1/Basics.html?useremail=abc%40gmail.com
+
+      Did you get the idea? Btw, %40 is the replacement for the '@' symbol. -->
+    </form>
+
+
+
+    <!-- what about the class, actions and method parameter in form argument? Will visit them next! -->
+    <form action="https://www.google.co.in/" method="get">
+      <h2>How to navigate to a new page on button click?</h2>
+      <p>Enter text and take me to google</p>
+      <input type="text" name="yourinput" value="">
+      <input type="submit" name="" value="Go to Google with input data">
+
+      <!-- See after entering the data as myinfo, how the address changes from:
+      file:///C:/Users/PC/Documents/Html_Level1/Basics.html
+      to
+      https://www.google.co.in/?yourinput=myInfo -->
+
+      <!-- So, the action parameter specifies what webpage to visit next after clicking the button -->
+    </form>
+
+    <!-- Labels in HTML -->
+    <!-- labels help access HTML elements by id -->
+    <form>
+      <h3>A common issue: How to get both elements inline?</h3>
+      <p>Enter some text</p>
+      <input type="text" name="" value="">
+      <!-- This makes two elements at seperate lines. -->
+    </form>
+
+    <!-- Solution is this (Bad practice) -->
+    <form>
+      <h3>Bad way to resolve it</h3>
+      <label>
+        Enter Text:
+        <input type="text" name="" value="Block 1">
+      </label>
+      <!-- To have multiple elements in the same line, need to repeat the block. -->
+      <label>
+        Enter other texts:
+        <input type="text" name="" value="Block 2">
+      </label>
+    </form>
+
+    <!-- Better Solution -->
+    <form>
+      <h3>Better way to resolve the problem</h3>
+      <label for="userinput">Enter Text:</label>
+      <label id="userinput"><input type="text" name="" value="Block 1"></label>
+      <label id="userinput">Enter other texts:</label>
+      <label id="userinput"><input type="text" name="" value="Block 2"></label>
+    </form>
+
+    <!-- Change between placeholder, required, value -->
+    <form>
+      <h3>Different parameter check types</h3>
+      <input type="text" name="" value="This needs to be erased">
+      <input type="text" name="" placeholder="This is just to show off!">
+      <input type="text" name="" placeholder="You must write something" required>
+      <input type="submit" name="" value="Check and Submit">
+
+    </form>
+
+    <h2>How to work with radio buttons, drop down menu etc.</h2>
+    <h3>Feedback Form</h3>
+    <form method="get">
+      <h4>Are you from India?</h4>
+      <label for="inIndia">Yes</label>
+      <input id = "inIndia" type="radio" name="" value="">
+      <label for="outIndia">No</label>
+      <input id = "outIndia" type="radio" name="" value="">
+      <p>This above radio buttons are not linked together, so both can be selected at a time.
+      The solution is to use the name parameter with same name to link both of them</p>
+
+      <h4>Are you from India?</h4>
+      <label for="inIndia">Yes</label>
+      <input id = "inIndia" type="radio" name="loc" value="">
+      <label for="outIndia">No</label>
+      <input id = "outIndia" type="radio" name="loc" value="">
+
+      <h4>How was the service?</h4>
+      <select name="">
+        <option value="Great">3</option>
+        <option value="Okey">2</option>
+        <option value="Bad">1</option>
+      </select>
+
+      <h4>Any other feedback?</h4>
+      <textarea name="feedbackLong" rows="8" cols="80" placeholder="Your suggestions here: "></textarea>
+
+      <input type="submit" name="" value="Submit">
+    </form>
+
+
+
+
+
+
+
+
+  </body>
+</html>
